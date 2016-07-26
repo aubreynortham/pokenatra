@@ -4,7 +4,6 @@
 
 <% @pokemon.each do |pokemon| %>
 
-
   <h3>
     <a href='/pokemons/<%= pokemon.id %>'>
       <%= pokemon.name %>
@@ -14,4 +13,6 @@
   <img class='pokemon' src='<%= pokemon.img_url %>'>
 
 <% end %>
+
+<h4>Trainers <a href="/trainers">(view all)</a></h4>
 </div>
