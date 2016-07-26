@@ -1,0 +1,17 @@
+<div class='containareon'>
+
+<h2><%= @trainer.name %></h2>
+
+<img src="<%= @trainer.img_url %>">
+
+<h3>Level: <%= @trainer.level %></h3>
+
+<h4>
+  <a href='/trainers/<%= @trainer.id %>/edit'>Edit this Trainer</a>
+</h4>
+
+<h3>
+  <a href="/trainers">(<)Back to Trainers</a>
+</h3>
+
+</div>

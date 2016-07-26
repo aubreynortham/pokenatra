@@ -1,0 +1,16 @@
+<div class='containareon'>
+
+<h2>Trainers <a href="/trainers/new">(+)</a></h2>
+
+<% @trainer.each do |trainer| %>
+
+  <h3>
+    <a href='/trainers/<%= trainer.id %>'>
+      <%= trainer.name %>
+    </a>
+  </h3>
+
+  <img class='pokemon' src='<%= trainer.img_url %>'>
+
+<% end %>
+</div>

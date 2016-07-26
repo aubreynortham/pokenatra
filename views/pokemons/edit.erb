@@ -19,10 +19,11 @@
   <input type="submit" value="Update the Pokemon!">
 </form>
 
-</div>
 
 <h4>Delete Pokemon</h4>
 <form action="/pokemons/<%= @pokemon.id %>" method="post">
   <input type="hidden" name="_method" value="delete">
   <input type="submit" value="DELETE">
 </form>
+
+</div>
