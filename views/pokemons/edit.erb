@@ -1,0 +1,28 @@
+<div class='containareon'>
+
+
+<form action="/pokemons/<%= @pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label>Name: </label>
+  <input type="text" name="pokemon[name]" value="<%= @pokemon.name %>"><br>
+
+  <label>CP: </label>
+  <input type="text" name="pokemon[cp]" value="<%= @pokemon.cp %>"><br>
+
+  <label>Poke_Type: </label>
+  <input type="text" name="pokemon[poke_type]" value="<%= @pokemon.poke_type %>"><br>
+
+  <label>Image: </label>
+  <input type="text" name="pokemon[img_url]" value="<%= @pokemon.img_url %>"><br>
+
+  <input type="submit" value="Update the Pokemon!">
+</form>
+
+</div>
+
+<h4>Delete Pokemon</h4>
+<form action="/pokemons/<%= @pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="DELETE">
+</form>
