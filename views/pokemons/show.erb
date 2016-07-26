@@ -2,11 +2,14 @@
 
 <h2><%= @pokemon.name %></h2>
 
-<img src="<%= @pokemon.img_url %>">
+<img class="pokemon" src="<%= @pokemon.img_url %>">
 
 <h3>Combat Power: <%= @pokemon.cp %></h3>
 
 <h3>Poke-Type: <%= @pokemon.poke_type %></h3>
+
+<h3>Trainer:</h3>
+</h4><%= @pokemon.trainer.name %></h4>
 
 <h4>
   <a href='/pokemons/<%= @pokemon.id %>/edit'>Edit this Pokemon</a>
