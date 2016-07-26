@@ -1,0 +1,19 @@
+<div class='containareon'>
+
+<h2><%= @pokemon.name %></h2>
+
+<img src="<%= @pokemon.img_url %>">
+
+<h3>Combat Power: <%= @pokemon.cp %></h3>
+
+<h3>Poke-Type: <%= @pokemon.poke_type %></h3>
+
+<h4>
+  <a href='/pokemons/<%= @pokemon.id %>/edit'>Edit this Pokemon</a>
+</h4>
+
+<h3>
+  <a href="/pokemons">(<)Back to Pokemons</a>
+</h3>
+
+</div>
