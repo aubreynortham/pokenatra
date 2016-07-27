@@ -1,8 +1,8 @@
 <div class='containareon'>
 
-<h2>Pokemon <a href="/pokemons/new">(+)</a></h2>
+  <h2>Pokemon <a href="/pokemons/new">(+)</a></h2>
 
-<% @pokemon.each do |pokemon| %>
+  <% @pokemon.each do |pokemon| %>
 
   <h3>
     <a href='/pokemons/<%= pokemon.id %>'>
@@ -12,7 +12,7 @@
 
   <img class='pokemon' src='<%= pokemon.img_url %>'>
 
-<% end %>
+  <% end %>
 
-<h4>Trainers <a href="/trainers">(view all)</a></h4>
+  <h4>Trainers <a href="/trainers">(view all)</a></h4>
 </div>
